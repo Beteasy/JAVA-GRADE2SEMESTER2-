@@ -1,0 +1,14 @@
+package no8;
+
+import java.util.*;
+
+public class Registration {
+	String regex1 = "[a-zA-Z]+";
+	String regex2 = "[0-9]+";
+	String userName = null;
+	String password = null;
+	Scanner readUserName = new Scanner(System.in);
+	Scanner readPassword = new Scanner(System.in);
+	File file = new File("UserInformation.txt");
+	
+}

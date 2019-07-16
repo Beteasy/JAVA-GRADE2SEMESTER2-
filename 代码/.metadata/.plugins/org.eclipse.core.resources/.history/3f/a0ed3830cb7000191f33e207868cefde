@@ -1,0 +1,15 @@
+package reviewSocketAndServerSocket;
+
+import java.net.*;
+
+public class Client {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Socket clientSocket = null;
+		InetAddress inetAddress = null;
+		InetSocketAddress socketAddress = null;
+	}
+
+}

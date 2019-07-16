@@ -1,0 +1,31 @@
+package shiyan5;
+
+public class Check {
+	public static void main(String[] args) {
+		String[] name = {"Æ»¹û","Õ¨Ò©","Î÷·ş","ÁòËá","ÊÖ±í","Áò»Ç"};
+		Goods[] goods= new Goods[name.length];
+		Machine machine = new Machine();
+		
+		for(int i=0;i<goods.length; i++) {
+			goods[i] = new Goods();
+			goods[i].setName(name[i]);
+			if(goods[i].getName().equals("Õ¨Ò©")|| goods[i].getName().equals("ÁòËá") || goods[i].getName().equals("Áò»Ç")) {
+				goods[i].setIsDanger(true);
+			}
+			else {
+				goods[i].setIsDanger(false);
+			}
+		}
+		
+		for(int i =0; i<goods.length; i++) {
+			try {
+				machine.checkBag(goods[i]);
+			}
+			catch(DangerException e) {
+				System.out.println(goods[i].getName()+e.getMessage());
+				System.out.println(goods[i].getName()+"±»½ûÖ¹!");
+			}
+			
+		}
+	}
+}

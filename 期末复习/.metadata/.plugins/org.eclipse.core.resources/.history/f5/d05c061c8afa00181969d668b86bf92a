@@ -1,0 +1,25 @@
+package mypackage;
+
+public class Compute {
+	double a, b;
+	
+	public Compute(double a,double b) {
+		this.a = a;
+		this.b = b;
+	}
+	double sum() {
+		return a+b;
+	}
+	
+	double sub() {
+		return a-b;
+	}
+	
+	double multi() {
+		return a*b;
+	}
+	
+	double div(){
+		return a/b;
+	}
+}

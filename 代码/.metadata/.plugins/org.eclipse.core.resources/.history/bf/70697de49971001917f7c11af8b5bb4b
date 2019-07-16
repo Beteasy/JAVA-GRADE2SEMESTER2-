@@ -1,0 +1,26 @@
+import java.io.IOException;
+import java.net.*;
+
+public class Server {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		ServerSocket serverSocket = null;
+		Socket socket = null;
+		ServerThread serverThrad = null;
+		Thread thread = null;
+		int port = 2333;
+		
+		while(true) {
+			try {
+				serverSocket = new ServerSocket(port);
+				socket = serverSocket.accept();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+	}
+
+}

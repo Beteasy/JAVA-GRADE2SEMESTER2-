@@ -1,0 +1,50 @@
+package concatenateWindow;
+
+import java.awt.*;
+import java.awt.event.*;
+
+import javax.swing.*;
+
+public class ConcatenateWindow extends JFrame implements ActionListener{
+	JTextField firstStr;
+	JTextField secondStr;
+	JTextField resultStr;
+	JButton contactButton;
+	JButton resetButton;
+
+	public ConcatenateWindow() {
+		init();
+		this.setBounds(200, 200, 600, 200);
+		this.setVisible(true);
+		this.setTitle("连接字符串");
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+	
+	void init() {
+		firstStr = new JTextField(10);
+		secondStr = new JTextField(10);
+		resultStr = new JTextField(20);
+		contactButton = new JButton("连接字符串");
+		resetButton = new JButton("重置");
+		
+		JPanel panel = new JPanel();
+		panel.setLayout(new FlowLayout());
+		panel.add(firstStr);
+		panel.add(new JLabel("+"));
+		panel.add(secondStr);
+		panel.add(contactButton);
+		panel.add(resultStr);
+		panel.add(resetButton);
+		
+		this.setContentPane(panel);
+		
+	}
+	
+	
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}

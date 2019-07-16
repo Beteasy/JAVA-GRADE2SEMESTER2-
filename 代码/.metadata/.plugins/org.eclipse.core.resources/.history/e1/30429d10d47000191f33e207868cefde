@@ -1,0 +1,15 @@
+package reviewSocketAndServerSocket;
+
+import java.io.*;
+
+public class ClientThread implements Runnable{
+
+	DataInputStream in = null;
+	DataOutputStream out = null;
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="E:\JAVA\CH10_10_1"/>
+		<item value="E:\JAVA\代码\CH10_10_2"/>
+		<item value="E:\JAVA\代码\Components"/>
+	</list>
+	<section name="NewWizardAction">
+	</section>
+</section>

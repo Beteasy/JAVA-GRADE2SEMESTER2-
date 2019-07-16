@@ -1,0 +1,10 @@
+package test;
+
+import mypackage.Compute;
+
+public class test {
+	public static void main(String args[]) {
+		Compute com1 = new Compute(1,2);
+		com1.sum();
+	}
+}

@@ -1,0 +1,56 @@
+import java.io.IOException;
+import java.net.*;
+import java.util.*;
+
+public class Host {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	}
+	
+}
+
+class HostClass implements Runnable{
+	
+	byte[] dataOut = null;
+	byte[] dataIn = null;
+	DatagramPacket dataPackSend = null;
+	DatagramPacket dataPackReceive = null;
+	DatagramSocket mailOut = null;
+	DatagramSocket mailReceive = null;
+	Scanner scanner = new Scanner(System.in);
+	String IP = new String("127.0.0.1");
+	int port = 2333;
+
+	
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		dataIn = new byte[8192];
+		dataPackReceive = new DatagramPacket(dataIn,dataIn.length);
+		try {
+			mailReceive = new DatagramSocket(port);
+		} catch (SocketException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		while(true) {
+			try {
+				if(mailReceive == null) {
+					System.out.println("mailReceive failed");
+					//break;
+				}
+				else {
+					mailReceive.receive(dataPackReceive);
+					//how to get the data
+					System.out.println(dataPackReceive.getData().toString());
+				}
+				
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+	}
+	
+}

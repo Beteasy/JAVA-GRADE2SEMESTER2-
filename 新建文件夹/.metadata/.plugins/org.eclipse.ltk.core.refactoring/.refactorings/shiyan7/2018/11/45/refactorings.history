@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;shiyan7.SellTickThread.java&apos; to &apos;SellTicketThread.java&apos;&#x0D;&#x0A;- Original project: &apos;shiyan7&apos;&#x0D;&#x0A;- Original element: &apos;shiyan7.SellTickThread.java&apos;&#x0D;&#x0A;- Renamed element: &apos;shiyan7.SellTicketThread.java&apos;" description="Rename compilation unit &apos;SellTickThread.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;shiyan7{SellTickThread.java" name="SellTicketThread.java" references="false" stamp="1541675638846" version="1.0"/>
+</session>

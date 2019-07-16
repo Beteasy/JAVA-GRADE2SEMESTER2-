@@ -1,0 +1,25 @@
+import java.io.*;
+
+public class ClientThread implements Runnable{
+
+	DataInputStream in = null;
+	DataOutputStream out = null;
+	
+	public void setDataInputStream(DataInputStream in) {
+		this.in = in;
+	}
+	
+	public void setDataOutputStream(DataOutputStream out) {
+		this.out = out;
+	}
+	
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		int i=0;
+		
+		while(true) {
+			System.out.println(in.readUTF());
+		}
+	}
+}

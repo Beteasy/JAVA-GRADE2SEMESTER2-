@@ -1,0 +1,28 @@
+package reviewLinkedList;
+
+import java.util.*;
+
+public class Application {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		LinkedList<Worker> list = new LinkedList<Worker>();
+		
+		Worker zhang3 = new Worker("zhang3",18,3000);
+		Worker li4 = new Worker("li4",25,3500);
+		Worker wang5 = new Worker("wang5",22,3200);
+		
+		list.add(zhang3);
+		list.add(li4);
+		list.add(wang5);
+		
+		Iterator<Worker> iter = list.iterator();
+		Worker temp;
+		while(iter.hasNext()) {
+			temp = iter.next();
+			System.out.println(temp.getName()+temp.getAge()+temp.getSalary());
+		}
+	}
+
+}

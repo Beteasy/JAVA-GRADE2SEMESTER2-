@@ -1,0 +1,25 @@
+package reviewSocketAndServerSocket;
+
+import java.io.*;
+import java.net.*;
+
+public class Server {
+
+	public static void main(String[] args){
+		// TODO Auto-generated method stub
+		ServerSocket serverSocekt = null;
+		Socket socket = null;
+		DataInputStream in = null;
+		DataOutputStream out = null;
+		ServerThread serverThread = null;
+		Thread thread = null;
+		
+		try {
+			serverSocekt = new ServerSocket(2333);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+}

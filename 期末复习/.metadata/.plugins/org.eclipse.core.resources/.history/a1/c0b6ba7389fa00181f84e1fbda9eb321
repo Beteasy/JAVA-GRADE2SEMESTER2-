@@ -1,0 +1,13 @@
+package mypackage;
+
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//Compute com = new Compute(1,2);
+		Compute com = new Compute(new Compute(1,2).sum(),3);
+		double result = com.multi();
+		System.out.println(result);
+	}
+
+}

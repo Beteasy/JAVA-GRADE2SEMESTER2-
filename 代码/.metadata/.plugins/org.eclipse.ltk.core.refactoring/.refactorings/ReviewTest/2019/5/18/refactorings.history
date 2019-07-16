@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;reviewTes.InetAddress&apos; to &apos;InetAddressTest&apos;&#x0D;&#x0A;- Original project: &apos;ReviewTest&apos;&#x0D;&#x0A;- Original element: &apos;reviewTes.InetAddress&apos;&#x0D;&#x0A;- Renamed element: &apos;reviewTes.InetAddressTest&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;InetAddress&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;reviewTes{InetAddress.java[InetAddress" matchStrategy="1" name="InetAddressTest" qualified="false" references="true" similarDeclarations="false" stamp="1556882087453" textual="false" version="1.0"/>
+</session>

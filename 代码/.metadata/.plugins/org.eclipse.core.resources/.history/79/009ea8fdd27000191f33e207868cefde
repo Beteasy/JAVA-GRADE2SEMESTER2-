@@ -1,0 +1,39 @@
+package reviewSocketAndServerSocket;
+
+import java.io.*;
+import java.net.*;
+
+public class Client {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Socket clientSocket = null;
+		InetAddress inetAddress = null;
+		InetSocketAddress socketAddress = null;
+		DataInputStream in = null;
+		DataOutputStream out = null;
+		ClientThread clientThread = null;
+		Thread thread = null;
+		
+		clientSocket = new Socket();
+		try {
+			clientThread = new ClientThread();
+			if(clientSocket.isConnected()) {}
+			else {
+				inetAddress = InetAddress.getByName("127.0.0.1");
+				socketAddress = new InetSocketAddress(inetAddress,2333);
+				clientSocket.connect(socketAddress);
+				in = new DataInputStream(clientSocket.getInputStream());
+				out = new DataOutputStream(clientSocket.getOutputStream());
+				
+				thread = new Thread(clientThread);
+				thread.start();
+			}
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+}

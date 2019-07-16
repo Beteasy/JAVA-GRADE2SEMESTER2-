@@ -1,0 +1,13 @@
+package reviewTes;
+
+import java.net.*;
+import java.net.InetAddress;
+public class InetAddress {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		InetAddressTest inetAddress = InetAddressTest.getByName("127.0.0.1");
+	}
+
+}

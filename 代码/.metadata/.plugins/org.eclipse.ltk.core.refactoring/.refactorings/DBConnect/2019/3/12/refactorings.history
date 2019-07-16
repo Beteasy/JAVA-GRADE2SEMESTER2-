@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;JDBCTest&apos; to &apos;DBConnect&apos;&#x0D;&#x0A;- Original project: &apos;DBConnect&apos;&#x0D;&#x0A;- Original element: &apos;DBConnect/src/JDBCTest&apos;&#x0D;&#x0A;- Renamed element: &apos;DBConnect/src/DBConnect&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;JDBCTest&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;JDBCTest" name="DBConnect" qualified="false" references="true" stamp="1552792981320" textual="false" version="1.0"/>
+</session>

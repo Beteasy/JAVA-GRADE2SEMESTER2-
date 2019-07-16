@@ -1,0 +1,28 @@
+package shiyan6;
+
+import java.io.*;
+
+public class Shiyan6 {
+	
+	public void createFile(String fileName) {
+		File scoreAna = new File("Machine");
+		try {
+			scoreAna.createNewFile();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	public double getTotalScore(String s) {
+		String regex = "\\D+";
+		String[] digit = s.split(regex);
+		double sum = 0.0;
+		for(int i=0;i<digit.length; i++) {
+			if(!digit[i].equals(" ")) {
+				sum += Double.parseDouble(digit[i]);
+			}
+		}
+		return sum;
+	}
+}

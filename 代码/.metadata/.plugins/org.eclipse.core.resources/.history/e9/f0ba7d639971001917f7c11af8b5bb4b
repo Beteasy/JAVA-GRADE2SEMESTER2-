@@ -1,0 +1,8 @@
+import java.net.*;
+
+public class ServerThread {
+
+	serverThread(Socket socket){
+		
+	}
+}

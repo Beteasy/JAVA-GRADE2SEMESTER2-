@@ -1,0 +1,10 @@
+package splitNum;
+
+public class SplitNum {
+	public static void main(String[] args) {
+		int num = 1234;
+		int a[] = new int[10];
+		
+	}
+
+}

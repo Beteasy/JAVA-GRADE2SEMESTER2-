@@ -1,0 +1,27 @@
+package concatenateWindow;
+
+import java.awt.event.*;
+
+import javax.swing.*;
+
+public class ConcatenateWindow extends JFrame implements ActionListener{
+	JTextFile firstStr;
+	JTextFiled secondStr;
+	JTextFiled resultStr;
+	
+	public ConcatenateWindow() {
+		init();
+	}
+	
+	void init() {
+		
+	}
+	
+	
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}

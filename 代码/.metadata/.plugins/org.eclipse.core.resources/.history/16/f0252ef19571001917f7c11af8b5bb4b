@@ -1,0 +1,7 @@
+import java.io.*;
+
+public class ClientThread {
+
+	DataInputStream in = null;
+	DataOutputStream out = null;
+}

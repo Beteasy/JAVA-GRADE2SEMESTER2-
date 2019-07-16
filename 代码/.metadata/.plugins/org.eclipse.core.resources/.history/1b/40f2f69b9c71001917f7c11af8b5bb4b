@@ -1,0 +1,18 @@
+import java.net.*;
+
+public class ServerThread implements Runnable{
+
+	Socket socket = null;
+	DataInputStream in = null;
+	DataOutputStream out = null;
+	
+	ServerThread(Socket socket){
+		this.socket = socket;
+	}
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
+	}
+}

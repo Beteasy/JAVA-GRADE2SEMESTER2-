@@ -1,0 +1,25 @@
+package shiyan2;
+
+public class Computer {
+	int[] data;
+	CD includeCD = new CD();
+	
+	public void putCD(CD cd) {
+		includeCD = cd;
+	}
+	
+	public void copyToComputer() {
+		data = includeCD.getContent();
+	}
+	
+	public void addData(int m) {
+		for(int i=0; i<data.length; i++) {
+			data[i] += m;
+		}
+	}
+	
+	public void copyToCD() {
+		includeCD.setContent(data);
+	}
+	
+}

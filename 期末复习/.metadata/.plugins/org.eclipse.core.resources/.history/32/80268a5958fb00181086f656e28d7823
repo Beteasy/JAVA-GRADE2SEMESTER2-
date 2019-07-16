@@ -1,0 +1,32 @@
+package shiyan3;
+
+public class ChinaPerson extends Person{
+	
+	public ChinaPerson() {
+		super();
+	}
+	
+	public ChinaPerson(double height, double weight) {
+		super(height,weight);
+	}
+	
+	public void speakHell() {
+		System.out.println("ฤ๚บร");
+	}
+	
+	public double averageHeight(Person[] people) {
+		double sum=0.0;
+		for(int i=0; i<people.length; i++) {
+			sum +=people[i].height;
+		}
+		return sum/people.length;
+	}
+	
+	public double averageWeight(Person[] people) {
+		double sum=0.0;
+		for(int i=0; i<people.length; i++) {
+			sum += people[i].weight;
+		}
+		return sum/people.length;
+	}
+}

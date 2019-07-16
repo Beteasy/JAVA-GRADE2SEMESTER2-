@@ -1,0 +1,32 @@
+import java.net.*;
+import java.util.*;
+
+public class Host {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	}
+	
+}
+
+class HostClass implements Runnable{
+	
+	byte[] dataOut = null;
+	byte[] dataIn = new byte[8192];
+	DatagramPacket dataPackSend = null;
+	DatagramPacket dataPackReceive = null;
+	DatagramSocket mailOut = null;
+	DatagramSocket mailReceive = null;
+	Scanner scanner = new Scanner(System.in);
+	
+	while() {
+		
+	}
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}

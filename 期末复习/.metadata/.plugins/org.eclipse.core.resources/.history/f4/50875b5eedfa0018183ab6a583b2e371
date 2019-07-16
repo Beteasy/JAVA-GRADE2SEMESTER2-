@@ -1,0 +1,14 @@
+package no8;
+
+public class Registration {
+	char[] userName = new char[15];
+	int[] password = new int[15];
+	
+	
+	public void setUserName() {
+		
+	}
+	public void setPassword() {
+		
+	}
+}

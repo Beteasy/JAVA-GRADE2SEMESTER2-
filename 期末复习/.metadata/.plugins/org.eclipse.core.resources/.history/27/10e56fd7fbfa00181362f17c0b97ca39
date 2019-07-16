@@ -1,0 +1,23 @@
+package shiyan2;
+
+public class CD {
+	int[] content;
+	int size;
+	
+	public int getSize() {
+		return size;
+	}
+	
+	public void setSize(int size) {
+		this.size = size;
+		content = new int[size];
+	}
+	
+	public int[] getContent() {
+		return content;
+	}
+	
+	public void setContent(int[] b) {
+		content = b;
+	}
+}
